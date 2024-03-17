@@ -1,0 +1,32 @@
+.nav-things{
+    display: flex;
+    justify-content: space-around
+}
+a{
+    text-decoration: none;
+    padding: 25px;
+    color:white;
+}
+body{
+    background-color: rgb(89, 91, 109);
+}
+.left{
+    display: flex;
+    flex-direction: column;
+}
+.text{
+    color: rgb(242, 239, 207);
+}
+input{
+    background-color: rgb(50, 53, 60);
+    border-radius: 6px;
+    padding: 10px;
+}
+button{
+    width: 270px;
+    color: white;
+    padding: 12px;
+    border-radius: 6px;
+    background-color: rgb(53, 185, 234);
+    margin-top: 15px;
+}
