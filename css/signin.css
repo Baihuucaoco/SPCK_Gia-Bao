@@ -1,14 +1,22 @@
 .nav-things{
     display: flex;
-    justify-content: space-around
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #23262E;
 }
 a{
     text-decoration: none;
     padding: 25px;
     color:white;
 }
+#logo{
+    padding: 0;
+}
 body{
     background-color: rgb(89, 91, 109);
+    margin: 0;
 }
 .left{
     display: flex;

@@ -5,14 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign in</title>
     <link rel="stylesheet" href="../css/signin.css" />
-    <link rel="stylesheet" href="../css/index.css" />
+    <!-- <link rel="stylesheet" href="../css/index.css" /> -->
   </head>
   <body>
     <div class="nav-things">
-      <div>
-        <a href="index.html">Home</a>
-        <a href="contact.html">Contact</a>
-        <a href="about.html">About</a>
+      <div style="display: flex; align-items: center">
+        <a id="logo" href="../HTMl/index.html">
+          <img style="width: 76px" src="../img/staem.png" alt=""
+        /></a>
+        <div>
+          <a href="index.html">Home</a>
+          
+          <a href="contact.html">About</a>
+        </div>
       </div>
       <div>
         <a href="login.html">Login</a>
@@ -28,24 +33,27 @@
         >
           <div class="all">
             <div class="third">
-              <div class="text">Email</div>
-              <input class="name" type="email" />
+              <div  class="text">Email</div>
+              <input id="email" class="name" type="email" />
             </div>
             <div class="first">
-              <div class="text">Account name</div>
-              <input class="name" type="text" />
+              <div  class="text">Account name</div>
+              <input id="name" class="name" type="text" />
             </div>
             <div class="second">
-              <div class="text">Password</div>
-              <input class="password" type="password" />
+              <div  class="text">Password</div>
+              <input id="pass" class="password" type="password" />
+              <p id="error-message" style="color: red; display: none;">Password must be at least 8 characters long.</p>
+
             </div>
             <div>
-              <button>Sign in</button>
+              <button onclick="validatePassword()" id="signin">Sign in</button>
             </div>
           </div>
-          
         </div>
       </div>
     </div>
+
+  <script src="../JS/signin.js"></script>
   </body>
 </html>

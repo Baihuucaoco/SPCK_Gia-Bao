@@ -6,14 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
     <link rel="stylesheet" href="../css/login.css" />
-    <link rel="stylesheet" href="../css/index.css">
+    <!-- <link rel="stylesheet" href="../css/index.css"> -->
   </head>
   <body>
     <div class="nav-things">
-      <div>
-        <a href="index.html">Home</a>
-        <a href="contact.html">Contact</a>
-        <a href="about.html">About</a>
+      <div style="display: flex; align-items: center">
+        <a id="logo" href="../HTMl/index.html">
+          <img style="width: 76px" src="../img/staem.png" alt=""
+        /></a>
+        <div>
+          <a href="index.html">Home</a>
+          
+          <a href="contact.html">About</a>
+        </div>
       </div>
       <div>
         <a href="login.html">Login</a>
@@ -27,14 +32,15 @@
           <div class="left" style="background-color: rgb(56, 55, 55); border-radius: 6px">
             <div><div class="first">
               <div class="text">Account name</div>
-              <input class="name" type="text" />
+              <input id="name" class="name" type="text" />
             </div>
             <div class="second">
               <div class="text">Password</div>
-              <input class="password" type="password" />
+              <input id="pw" class="password" type="password" />
+              
             </div>
             <div>
-              <button>Sign in</button>
+              <button id="login">Log in</button>
             </div></div>
             <img style="width: 150px;" src="/img/nhìn.png" alt="">
           </div>
@@ -42,5 +48,6 @@
         
       </div>
     </div>
+    <script src="../JS/login.js"></script>
   </body>
 </html>
