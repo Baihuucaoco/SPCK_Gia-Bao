@@ -23,7 +23,7 @@ function getvalue() {
     alert("Fill your email");
   } else if (pass === "") {
     alert("Fill your password");
-  } else {
+  }else {
     const account = {
       email: email,
       name: name,
