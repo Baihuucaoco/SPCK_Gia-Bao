@@ -17,7 +17,10 @@ body{
     background-color: rgba(10, 49, 78, 0.83);
     margin: 0;
 }
-
+.more:hover{
+  color: green;
+  transition-duration: 300ms;
+}
 * {box-sizing:border-box}
 
 /* Slideshow container */
